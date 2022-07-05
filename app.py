@@ -1,9 +1,8 @@
-import redis
+
 from flask import Flask,jsonify,make_response
 from bs4 import BeautifulSoup as bs
 import requests
 app = Flask(__name__)
-redis = redis.Redis(host='redis', port=6379, db=0)
 
 url = "https://jobs.scotiabank.com/go/IT-&-Digital-Banking-Jobs/2298017/"
 url_params = "/?q=&sortColumn=referencedate&sortDirection=desc"
